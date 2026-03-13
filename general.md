@@ -1,7 +1,9 @@
 
 
-Centro Universitário de Brasília \- UniCEUB  
- Curso de Ciência da Computação
+# Centro Universitário de Brasília \- CEUB  
+# Curso de Ciência da Computação  
+
+
 <img src="logo_ceub.jpg" alt="Logo Ceub" width="200" height="200">     
 #  FastQuest
 
