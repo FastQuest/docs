@@ -2,7 +2,7 @@
 
 Centro Universitário de Brasília \- UniCEUB  
  Curso de Ciência da Computação
-
+![Logo Ceub](logo_ceub.jpg)
 #  FastQuest
 
 *Website de banco de questões e questionários preparatórios para o exame da ordem*
