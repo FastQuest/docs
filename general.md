@@ -2,7 +2,7 @@ Centro Universitário de Brasília \- CEUB
 Curso de Ciência da Computação  
 
 
-<img src="logo_ceub.jpeg" alt="Logo Ceub" width="500" height="200">     
+<img src="logo_ceub.jpeg" alt="Logo Ceub" width="2000" height="500">     
 
 # FastQuest
 
