@@ -1,11 +1,5 @@
 # **FastQuest \- Visão do Produto**
-
 **Data:** 24/02/2026
-
-## **Observações**
-
-* **O documento de visão deverá ser revisado por diversos envolvidos no projeto**, portanto, mantenha o nível de detalhes gerais suficiente para que todos possam entender. No entanto, ofereça detalhes suficientes para fornecer à equipe as informações necessárias para a modelagem da solução.  
-* Caso algum tópico não seja aplicável para o contexto do projeto, o seguinte texto deverá ser inserido logo abaixo do título do tópico: "**Não se aplica**."
 
 ## **Sumário**
 
@@ -285,8 +279,6 @@ O FastQuest atua como uma plataforma independente (standalone) do ponto de vista
 | **Regulamentar** | Padrão FGV/OAB | O modelo de dados está amarrado à estrutura atual do Exame de Ordem (4 alternativas, etc). Alterações oficiais exigirão refatoração. |
 
 # **8\. Riscos**
-
-*\<Instrução: Lista todos os riscos percebidos que podem impactar o alcance do objetivo do projeto.\>*
 
 | Nome do Risco | Tipo do Risco | Probabilidade | Impacto |
 | :---- | :---- | :---- | :---- |
