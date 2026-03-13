@@ -1,11 +1,10 @@
-
-
-# Centro Universitário de Brasília \- CEUB  
-# Curso de Ciência da Computação  
+Centro Universitário de Brasília \- CEUB  
+Curso de Ciência da Computação  
 
 
 <img src="logo_ceub.jpg" alt="Logo Ceub" width="200" height="200">     
-#  FastQuest
+
+# FastQuest
 
 *Website de banco de questões e questionários preparatórios para o exame da ordem*
 
