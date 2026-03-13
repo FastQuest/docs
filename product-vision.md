@@ -210,8 +210,6 @@ O FastQuest atua como uma plataforma independente (standalone) do ponto de vista
 
 ## **5.2 Características-Chave do Produto**
 
-*\<Instrução: As características-chave devem ser listadas descrevendo serviços ou macro-funcionalidades que agregam valor ao negócio do cliente, derivadas dos objetivos do negócio.\>*
-
 | Característica-chave | Descrição | Prioridade |
 | :---- | :---- | :---- |
 | **Gerador Dinâmico de Simulados** | Criação automatizada de cadernos de prova customizáveis focados no padrão FGV/OAB, permitindo filtros por disciplina e ano, com uma interface construída em Vue.js. | Alta |
@@ -265,8 +263,6 @@ O FastQuest atua como uma plataforma independente (standalone) do ponto de vista
 
 ### **5.5.3 Requisitos de Documentação**
 
-*\<Instrução: Esta seção descreve a documentação que deve ser desenvolvida para que o projeto seja bem-sucedido.\>*
-
 | Tipo | Descrição | Formato |
 | :---- | :---- | :---- |
 | **Documentação da API** | Mapeamento completo dos endpoints em Go, rotas, geração de simulados. Deve incluir exemplos (JSON). | Web (Swagger / OpenAPI) |
@@ -298,12 +294,4 @@ O FastQuest atua como uma plataforma independente (standalone) do ponto de vista
 | **Custos Imprevistos com API de IA** | Financeiro | Média | Médio |
 | **Mudança Estrutural no Edital (OAB/FGV)** | Negócio | Baixa | Alto |
 | **Falha na Hospedagem Gratuita** | Infraestrutura / Técnico | Baixa | Médio |
-
-# **9\. Documentos de Referência**
-
-*\<Instrução: Lista todos os documentos aos quais o documento de visão faz referência. Especifique as origens a partir das quais os leitores podem obter as referências.\>*
-
-| Documento | Descrição | Acesso |
-| :---- | :---- | :---- |
-| *\<Nome do documento\>* | *\<Breve descrição do documento\>* | *\<Link ou local de acesso\>* |
 
