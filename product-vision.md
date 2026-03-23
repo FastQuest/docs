@@ -1,6 +1,8 @@
 # **FastQuest \- Visão do Produto**
 **Data:** 24/02/2026
 
+<img src="logo_ceub.jpeg" alt="Logo Ceub" width="2000" height="500">     
+
 ## **Sumário**
 
 * [1. Introdução](#1-introdução)  
