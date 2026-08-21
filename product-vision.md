@@ -7,7 +7,8 @@
 
 * [1. Introdução](#1-introdução)  
   * [1.1 Escopo e Alinhamento Estratégico](#11-escopo-e-alinhamento-estratégico)  
-  * [1.2 Definições, Acrônimos e Abreviações](#12-definições-acrônimos-e-abreviações)  
+  * [1.2 Definições, Acrônimos e Abreviações](#12-definições-acrônimos-e-abreviações)
+  * [1.3 Declaração de Uso de Inteligência Artificial](#13-declaração-de-uso-de-inteligência-artificial)
 * [2. Análise de Contexto](#2-análise-de-contexto)  
   * [2.1 Detalhamento da Necessidade](#21-detalhamento-da-necessidade)  
   * [2.2 Alternativas](#22-alternativas)  
@@ -26,7 +27,6 @@
 * [6. Categorização do Projeto](#6-categorização-do-projeto)  
 * [7. Restrições](#7-restrições)  
 * [8. Riscos](#8-riscos)  
-* [9. Documentos de Referência](#9-documentos-de-referência)
 
 # **1\. Introdução**
 
@@ -39,6 +39,19 @@ Este documento de visão delimita as fronteiras do **MVP (Produto Mínimo Viáve
 ## **1.2 Definições, Acrônimos e Abreviações**
 
 * **MVP (Minimum Viable Product):** Produto Mínimo Viável; a versão mais simples do FastQuest que pode ser lançada com as funcionalidades essenciais.
+  
+## **1.3 Declaração de Uso de Inteligência Artificial (AI Disclaimer)**
+
+Este projeto utiliza ferramentas de **Inteligência Artificial Generativa (IA)** exclusivamente como tecnologia de apoio ao processo de desenvolvimento e estruturação do produto. O uso de IA é estritamente instrumental e visa otimizar fluxos de trabalho sob contínua supervisão humana.
+
+* **Escopo de Atuação da IA:**
+  * **Apoio ao Desenvolvimento:** Auxílio no suporte, otimização e refatoração de código na stack do projeto (**Go** para o backend e **Vue.js** para o frontend), bem como na modelagem de consultas no **PostgreSQL**.
+  * **Documentação:** Suporte na estruturação, escrita e padronização dos artefatos do projeto (Documento de Visão, especificações de API e guias de implantação).
+   
+* **Supervisão Humana e Governança:**
+  * **Validação Técnica:** Nenhum código ou arquitetura gerada por IA é integrado ao repositório final sem revisão manual prévia, testes e validação por parte dos desenvolvedores.
+  * **Curadoria Pedagógica:** O acervo de questões e gabaritos passa por auditoria para mitigar riscos de "alucinação" ou inconsistências na extração de texto.
+  * **Privacidade e LGPD:** Dados pessoais de estudantes e professores **não são compartilhados** com modelos de IA. As chamadas via API restringem-se a dados públicos de exames e ao processamento funcional do sistema.
 
 # **2\. Análise de Contexto**
 
