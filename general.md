@@ -13,7 +13,7 @@ Curso de Ciência da Computação
 **GUILHERME MAGARÃO NETO (RA:22309292)**  
 **LUIZ HENRIQUE OLIVEIRA ALVES (RA:22306435)**        
 **VICTOR ALBUQUERQUE CORDEIRO (RA:22309255)**      
-**GABRIEL PAIVA**
+**GABRIEL ANTONIO NAVARRO PAIVA**
 
 **BRASÍLIA**  
 **(2025)**
@@ -26,9 +26,8 @@ luiz.alves@sempreceub.com
 beatriz.calado@sempreceub.com  
 anthony.passos@sempreceub.com  
 guilherme.magarao@sempreceub.com
-
-**PROFESSOR ORIENTADOR**  
-Professor Fabrício Ofuji
+victor.albucorde@sempreceub.com
+gabriel.npaiva@sempreceub.com
 
 **BRASÍLIA**  
 **OUTUBRO DE 2025**  
@@ -39,6 +38,8 @@ Professor Fabrício Ofuji
 [1.1. PÚBLICO ALVO	3](#público-alvo)
 
 [1.2. CONTEXTO DO PROJETO	3](#contexto-do-projeto)
+
+[1.3. DECLARAÇÃO DE USO DE INTELIGÊNCIA ARTIFICIAL	3](#declaracao-de-IA)
 
 [**2 . LEVANTAMENTO DE REQUISITOS	3**](#.-levantamento-de-requisitos)
 
@@ -82,6 +83,24 @@ Esses usuários possuem uma rotina intensa e tempo limitado para revisar o conte
 2. ##  **CONTEXTO DO PROJETO** {#contexto-do-projeto}
 
 O website foi um pedido da área de direito da universidade, pois precisa de um dinamismo na realização de atividades relacionadas ao exame. Anteriormente, as atividades eram feitas e corrigidas manualmente, o que dificulta o aprendizado e logística de entrega de atividades.
+
+3. ##  **DECLARAÇÃO DE USO DE INTELIGÊNCIA ARTIFICIAL** {#declaracao-de-IA}
+
+No desenvolvimento do projeto FastQuest, foram utilizadas ferramentas de Inteligência Artificial Generativa (IA) como recurso tecnológico de apoio no processo de engenharia de software e estruturação do sistema. O uso de IA possui caráter estritamente instrumental e complementar, operando sob permanente supervisão e validação da equipe de desenvolvedores.
+
+Aplicação Técnica da Ferramenta:
+
+Apoio ao Desenvolvimento: Utilização de modelos para auxílio na estruturação, refatoração e otimização do código-fonte nas linguagens adotadas no projeto (Golang no backend e Vue.js com TypeScript no frontend), além de suporte no desenho de queries relacionais e otimização para o banco de dados PostgreSQL.
+
+Documentação e Modelagem: Suporte na organização, padronização e revisão textual de documentos acadêmicos e técnicos, como o levantamento de requisitos, especificação da arquitetura e mapeamento de rotas da API (Swagger).
+
+Supervisão, Qualidade e Responsabilidade:
+
+Revisão e Testes: Todo código ou estrutura proposta por IA passou por revisão manual, refatoração de regras de negócio e validação prévia antes do envio aos ambientes de desenvolvimento e produção.
+
+Integridade dos Dados de Provas: O acervo de questões, gabaritos e alternativas extraídos passou por curadoria humana para evitar discrepâncias, informações desatualizadas ou inconsistências pedagógicas ("alucinações").
+
+Privacidade: Nossos processos garantem conformidade com a LGPD. Nenhum dado pessoal dos usuários da plataforma é compartilhado ou enviado para processamento em modelos de IA externos.
 
 * # **. LEVANTAMENTO DE REQUISITOS** {#.-levantamento-de-requisitos}
 
