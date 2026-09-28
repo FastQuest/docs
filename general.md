@@ -168,15 +168,34 @@ A seguir, apresenta-se a paleta de cores do projeto, acompanhada do significado 
 └── extensions.json
 
 public/
-├── imgs/
-└── favicon.ico
+└── imgs/
+    ├── create/
+    ├── header/
+    ├── home/
+    ├── list/
+    ├── new-list/
+    └── questions/
+
 
 src/
+├── api/
 ├── assets/
 ├── components/
+│   ├── auth/
+│   ├── home/
+│   ├── icons/
+│   ├── layout/
+│   ├── questions/
+│   ├── questionset/
+│   └── ui/
+├── composables/
 ├── config/
 ├── models/
+├── repositories/
 ├── router/
+├── services/
+├── stores/
+├── utils/
 ├── views/
 ├── App.vue
 └── main.ts
@@ -200,43 +219,135 @@ vite.config.ts
 #### Backend
 
 ```text
-database/
-└── database.go
-
-docs/
-├── docs.go
-├── swagger.json
-└── swagger.yaml
-
-handlers/
-├── h_answers.go
-├── h_question_set.go
-├── h_questions.go
-└── utils.go
-
-migrations/
-
-pkg/
-├── models/
-│   ├── answers.go
-│   ├── comment.go
-│   ├── pagination.go
-│   ├── question_set.go
-│   ├── question.go
-│   ├── questionSource.go
-│   ├── source.go
-│   ├── subject.go
-│   ├── topic.go
-│   └── user.go
-└── filtersMap.go
-
-.gitignore
-flashquest
-go.mod
-go.sum
-main.go
-README.md
-router.go
+backend/
+├── go.mod
+├── IMPLEMENTATION_SUMMARY.md
+├── inserts.sql
+├── main.go
+├── Makefile
+├── README.md
+├── refactor.MD
+├── ROTAS.md
+├── router.go
+├── router_test.go
+├── docs/
+│   ├── docs.go
+│   ├── swagger.json
+│   └── swagger.yaml
+├── internal/
+│   ├── ai/
+│   │   ├── dto.go
+│   │   ├── handler.go
+│   │   ├── repository.go
+│   │   └── service.go
+│   ├── answer/
+│   │   ├── answer.go
+│   │   ├── dto.go
+│   │   ├── handler.go
+│   │   ├── models.go
+│   │   ├── repository.go
+│   │   ├── routes.go
+│   │   ├── service.go
+│   │   └── service_test.go
+│   ├── appcontext/
+│   │   └── context.go
+│   ├── auth/
+│   │   ├── auth.go
+│   │   ├── dto.go
+│   │   ├── handler.go
+│   │   ├── middleware.go
+│   │   ├── models.go
+│   │   ├── models_test.go
+│   │   ├── repository.go
+│   │   ├── routes.go
+│   │   ├── service.go
+│   │   └── service_test.go
+│   ├── exam/
+│   │   ├── dto.go
+│   │   ├── handler.go
+│   │   ├── repository.go
+│   │   └── service.go
+│   ├── platform/
+│   │   └── database/
+│   │       └── database.go
+│   ├── question/
+│   │   ├── dto.go
+│   │   ├── handler.go
+│   │   ├── repository.go
+│   │   └── service.go
+│   ├── questionoption/
+│   │   ├── dto.go
+│   │   ├── handler.go
+│   │   ├── repository.go
+│   │   └── service.go
+│   ├── questionset/
+│   │   ├── dto.go
+│   │   ├── handler.go
+│   │   ├── repository.go
+│   │   └── service.go
+│   ├── source/
+│   │   ├── dto.go
+│   │   ├── handler.go
+│   │   ├── repository.go
+│   │   └── service.go
+│   ├── submission/
+│   │   ├── dto.go
+│   │   ├── handler.go
+│   │   ├── repository.go
+│   │   └── service.go
+│   └── user/
+│       ├── dto.go
+│       ├── handler.go
+│       ├── repository.go
+│       ├── routes.go
+│       ├── service.go
+│       └── user.go
+├── migrations/
+│   ├── 20250903033746_setup.sql
+│   ├── 20250903051914_placeholder_fill_test.sql
+│   ├── 20251202233153_new_source.sql
+│   ├── 20251215194444_rename_columns.sql
+│   ├── 20251216174152_reset_database.sql
+│   ├── 20260423211000_auth_roles_refresh_tokens.sql
+│   ├── 20260528211931_user_responses.sql
+│   └── 20260529001516_rename_answers.sql
+├── oabtopdf/
+│   └── src/
+│       └── index.ts
+├── pkg/
+│   ├── filtersMap.go
+│   ├── apiresp/
+│   │   ├── pagination.go
+│   │   ├── response.go
+│   │   └── response_test.go
+│   ├── models/
+│   │   ├── answer.go
+│   │   ├── comment.go
+│   │   ├── question.go
+│   │   ├── question_option.go
+│   │   ├── question_set.go
+│   │   ├── source.go
+│   │   ├── source_instances.go
+│   │   ├── submission.go
+│   │   ├── subject.go
+│   │   ├── topic.go
+│   │   └── user.go
+│   ├── security/
+│   │   ├── jwt/
+│   │   │   ├── claims.go
+│   │   │   ├── rs256.go
+│   │   │   └── rs256_test.go
+│   │   ├── password/
+│   │   │   ├── password.go
+│   │   │   └── password_test.go
+│   │   └── token/
+│   │       ├── refresh.go
+│   │       └── refresh_test.go
+│   └── sliceutil/
+│       ├── sliceutil.go
+│       └── sliceutil_test.go
+└── scripts/
+    └── gen_jwt_keys.sh
 ```
 
 ### 4.3. Estrutura do Backend
