@@ -364,38 +364,66 @@ Exemplo de rota:
 r.HandleFunc("/questions", handlers.CreateQuestion).Methods("POST")
 ```
 
-**Rotas de Questões**
+### Autenticação
 
-| Método | Endpoint | Descrição |
-| --- | --- | --- |
-| **POST** | `/questions` | Cria uma nova questão. |
-| **GET** | `/questions` | Retorna todas as questões cadastradas. |
-| **POST** | `/questions/array` | Retorna questões a partir de um conjunto de IDs fornecidos. |
-| **GET** | `/questions/{id}` | Retorna os dados de uma questão específica. |
-| **DELETE** | `/questions/{id}` | Remove a questão correspondente ao ID informado. |
+| Método | Endpoint | Acesso | Descrição |
+| --- | --- | --- | --- |
+| `POST` | `/api/auth/register` | Público | Registra um usuário. |
+| `POST` | `/api/auth/login` | Público | Autentica um usuário e inicia uma sessão. |
 
-**Rotas de Respostas**
+### Questões
 
-| Método | Endpoint | Descrição |
-| --- | --- | --- |
-| **POST** | `/questions/{id}/answers` | Envia a resposta de uma questão. |
-| **GET** | `/questions/{id}/answers` | Retorna respostas enviadas para a questão. |
+| Método | Endpoint | Acesso | Descrição |
+| --- | --- | --- | --- |
+| `POST` | `/questions` | Público | Cria uma questão ou um lote de questões. |
+| `GET` | `/questions` | Público | Lista questões com filtros e paginação. |
+| `GET` | `/questions/filters` | Público | Retorna os filtros disponíveis para questões. |
+| `POST` | `/questions/by-ids` | Público | Busca questões pelos IDs enviados no corpo. |
+| `GET` | `/questions/{id}` | Público | Retorna uma questão pelo ID. |
+| `DELETE` | `/questions/{id}` | Público | Exclui uma questão pelo ID. |
 
-**Rotas de Listas de Questões**
+### Opções de Questão
 
-| Método | Endpoint | Descrição |
-| --- | --- | --- |
-| **POST** | `/question-sets` | Cria uma nova lista de questões. |
-| **GET** | `/question-sets` | Retorna todas as listas disponíveis. |
-| **GET** | `/question-sets/{id}` | Retorna os dados de uma lista específica. |
-| **GET** | `/question-sets/{id}/questions` | Retorna todas as questões pertencentes à lista. |
-| **GET** | `/question-sets/{id}/question-ids` | Retorna apenas os IDs das questões pertencentes à lista. |
+| Método | Endpoint | Acesso | Descrição |
+| --- | --- | --- | --- |
+| `POST` | `/questions/{id}/question-options` | Público | Cria opções para uma questão. |
+| `GET` | `/questions/{id}/question-options` | Público | Lista as opções de uma questão. |
+| `POST` | `/question-options/by-ids` | Público | Busca opções pelos IDs enviados no corpo. |
 
-**Rota de Acesso ao Swagger**
+### Listas de Questões
 
-| Método | Endpoint | Descrição |
-| --- | --- | --- |
-| **GET** | `/swagger/` | Exibe a documentação interativa da API via Swagger. |
+| Método | Endpoint | Acesso | Descrição |
+| --- | --- | --- | --- |
+| `POST` | `/question-sets` | Público | Cria uma lista de questões. |
+| `GET` | `/question-sets` | Público | Lista listas com filtros e paginação. |
+| `GET` | `/question-sets/{id}` | Público | Retorna uma lista pelo ID. |
+| `GET` | `/question-sets/{id}/questions` | Público | Retorna as questões da lista; use `?fields=id` para obter somente os IDs. |
+
+### Fontes, Exames e IA
+
+| Método | Endpoint | Acesso | Descrição |
+| --- | --- | --- | --- |
+| `POST` | `/sources` | Público | Cria uma fonte de exame. |
+| `POST` | `/exam` | Público | Cria um exame e sua lista de questões. |
+| `POST` | `/ai/gen-question` | Público | Solicita a geração de uma questão por IA. |
+| `POST` | `/ai/gen-questionset` | Público | Gera uma lista de questões por IA. |
+
+### Usuário, Respostas e Submissões
+
+| Método | Endpoint | Acesso | Descrição |
+| --- | --- | --- | --- |
+| `GET` | `/users/me` | Protegido | Retorna o usuário autenticado. |
+| `GET` | `/answers/performance` | Protegido | Retorna o desempenho do usuário por matéria. |
+| `GET` | `/answers/overall-performance` | Protegido | Retorna o desempenho geral do usuário. |
+| `POST` | `/submissions` | Protegido | Cria uma submissão com as respostas do usuário. |
+| `GET` | `/submissions` | Protegido | Lista as submissões do usuário autenticado. |
+| `GET` | `/submissions/{id}` | Protegido | Retorna uma submissão pelo ID. |
+
+### Documentação
+
+| Método | Endpoint | Acesso | Descrição |
+| --- | --- | --- | --- |
+| `GET` | `/swagger/` | Público | Exibe a documentação interativa da API. |
 
 #### 4.3.2. Banco de Dados
 
