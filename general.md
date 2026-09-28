@@ -86,41 +86,46 @@ No desenvolvimento do projeto FastQuest, foram utilizadas ferramentas de Intelig
 
 ### 2.1. Requisitos Funcionais
 
-1. O sistema deve permitir a criação de novas questões com enunciado, alternativas, disciplina, assunto e resposta correta.
-2. O autor deve poder atualizar e deletar questões criadas.
-3. O usuário deve poder visualizar uma lista de questões disponíveis.
-4. O usuário deve poder visualizar o conteúdo completo de uma questão e suas alternativas.
-5. O usuário deve poder responder questões individualmente.
-6. O sistema deve exibir o gabarito da questão após a resposta.
-7. O sistema deve permitir a criação de listas de questões agrupadas por tema ou prova.
-8. O usuário deve poder visualizar listas de questões.
-9. O sistema deve permitir responder uma lista completa como um simulado.
-10. O sistema deve permitir que o autor atualize e delete listas criadas.
-11. O usuário deve poder definir se uma lista é pública ou privada.
-12. O usuário deve poder pesquisar questões dentro de uma lista.
-13. O sistema deve gerar simulados com base em provas da OAB, filtrados por ano.
-14. O usuário deve poder escolher disciplinas e assuntos específicos no simulado.
-15. O usuário deve poder definir a quantidade de questões no simulado.
-16. O sistema deve exibir o tempo restante durante o simulado.
-17. O sistema deve permitir pausar e retomar simulados.
-18. O sistema deve exibir explicações ou comentários das respostas após o simulado.
-19. O sistema deve apresentar o resultado final e a taxa de acertos por disciplina.
-20. O sistema deve armazenar o histórico de simulados e desempenho por tema.
-21. O sistema deve permitir o compartilhamento de resultados com outros usuários.
-22. O sistema deve sugerir novos simulados com base no desempenho anterior.
-23. O simulado deve reproduzir as condições reais da prova da OAB.
-24. O sistema deve permitir ordenar resultados da pesquisa (por mais recentes, populares etc.).
-25. O sistema deve permitir aplicar filtros de pesquisa por tipo de conteúdo, disciplina e assunto.
-26. O sistema deve mostrar ao usuário o desempenho recente e total graficamente ou textualmente.
+| Código | Descrição |
+|---|---|
+| RF01 | O sistema deve permitir a criação de novas questões com enunciado, alternativas, disciplina, assunto e resposta correta. |
+| RF02 | O autor deve poder atualizar e deletar questões criadas. |
+| RF03 | O usuário deve poder visualizar uma lista de questões disponíveis. |
+| RF04 | O usuário deve poder visualizar o conteúdo completo de uma questão e suas alternativas. |
+| RF05 | O usuário deve poder responder questões individualmente. |
+| RF06 | O sistema deve exibir o gabarito da questão após a resposta. |
+| RF07 | O sistema deve permitir a criação de listas de questões agrupadas por tema ou prova. |
+| RF08 | O usuário deve poder visualizar listas de questões. |
+| RF09 | O sistema deve permitir responder uma lista completa como um simulado. |
+| RF10 | O sistema deve permitir que o autor atualize e delete listas criadas. |
+| RF11 | O usuário deve poder definir se uma lista é pública ou privada. |
+| RF12 | O usuário deve poder pesquisar questões dentro de uma lista. |
+| RF13 | O sistema deve gerar simulados com base em provas da OAB, filtrados por ano. |
+| RF14 | O usuário deve poder escolher disciplinas e assuntos específicos no simulado. |
+| RF15 | O usuário deve poder definir a quantidade de questões no simulado. |
+| RF16 | O sistema deve exibir o tempo restante durante o simulado. |
+| RF17 | O sistema deve permitir pausar e retomar simulados. |
+| RF18 | O sistema deve exibir explicações ou comentários das respostas após o simulado. |
+| RF19 | O sistema deve apresentar o resultado final e a taxa de acertos por disciplina. |
+| RF20 | O sistema deve armazenar o histórico de simulados e desempenho por tema. |
+| RF21 | O sistema deve permitir o compartilhamento de resultados com outros usuários. |
+| RF22 | O sistema deve sugerir novos simulados com base no desempenho anterior. |
+| RF23 | O simulado deve reproduzir as condições reais da prova da OAB. |
+| RF24 | O sistema deve permitir ordenar resultados da pesquisa (por mais recentes, populares etc.). |
+| RF25 | O sistema deve permitir aplicar filtros de pesquisa por tipo de conteúdo, disciplina e assunto. |
+| RF26 | O sistema deve mostrar ao usuário o desempenho recente e total graficamente ou textualmente. |
+
 
 ### 2.2. Requisitos Não Funcionais
 
-1. O sistema deve possuir um banco de dados estruturado e migrável.
-2. O backend deve ser hospedado em um ambiente estável e seguro.
-3. A pesquisa deve retornar resultados de forma rápida e eficiente.
-4. A interface deve ser intuitiva, permitindo fácil navegação entre listas, questões e simulados.
-5. O sistema deve armazenar os dados dos usuários e resultados de forma segura.
-6. O site deve simular adequadamente as condições reais de tempo e formato da prova.
+| Código | Descrição |
+|---|---|
+| RNF01 | O sistema deve possuir um banco de dados estruturado e migrável. |
+| RNF02 | O backend deve ser hospedado em um ambiente estável e seguro. |
+| RNF03 | A pesquisa deve retornar resultados de forma rápida e eficiente. |
+| RNF04 | A interface deve ser intuitiva, permitindo fácil navegação entre listas, questões e simulados. |
+| RNF05 | O sistema deve armazenar os dados dos usuários e resultados de forma segura. |
+| RNF06 | O site deve simular adequadamente as condições reais de tempo e formato da prova. |
 
 ## 3. Arquitetura e Design
 
