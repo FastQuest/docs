@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="logo_ceub.jpeg" alt="Logo CEUB" width="200">
-</div>
+<img src="logo_ceub.jpeg" alt="Logo Ceub" width="2000" height="500">     
 
 **Centro Universitário de Brasília - CEUB**  
 **Curso de Ciência da Computação**
